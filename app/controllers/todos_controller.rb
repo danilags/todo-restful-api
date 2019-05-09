@@ -8,7 +8,7 @@ class TodosController < ApplicationController
       "data" => @todos,
       "status_code" => 200,
     }
-    json_response(response, 200)
+    json_response(response, 200, 'Success')
   end
 
   
