@@ -1,6 +1,8 @@
 module Response 
-  def json_reponse(object, status = :ok)
-    render json: object, status: status
+  
+  def json_response(object, status = :ok)
+    # logger.log "Setter for logging #{message}"
+    render json: object, status: status, message: message
   end
 
 end
